@@ -30,6 +30,6 @@ def ddRun():
     if pool == 'os':
         subprocess.run(['sudo', 'dd', 'if=/mnt/sdb1/OS/' + image, 'of=/dev/' + target])
     elif pool == 'down':
-        subprocess.run(['sudo', 'dd', 'if=/home/$USER/Downloads/' + image, 'of=/dev/' + target])
+        subprocess.run(['sudo', 'dd', 'if=/home/dennis/Downloads/' + image, 'of=/dev/' + target])
 
 ddRun()

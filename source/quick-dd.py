@@ -28,7 +28,8 @@ def selectPool():
         subprocess.run(['ls', '/mnt/sdb1/OS'])
     elif pool == 'down':
         print('~/Downloads is selected')
-        subprocess.run(['ls', '/home/dennis/Downloads'])
+        homeFolder = str(Path.home())
+        subprocess.run(['ls', homeFolder + '/Downloads'])
     else:
         print(pool + ' is not a known pool')
         selectPool()

@@ -25,4 +25,4 @@ Now the tool can be run with the `qdd` command from the commandline.
 - 'os' pointing to /mnt/sdb1/OS
 - 'down' pointing to ~/Downloads
 
-To make a custom pool edit the selectPool and ddRun functions.  
+To make a custom pool edit the `selectPool` and `ddRun` functions.  

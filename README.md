@@ -12,6 +12,7 @@ A simple Python program to run dd quicker.
 - :x: Print numbered array contents
 - :x: Pull image name from array with number
 - :x: The ability to manage pools with quick-dd
+- :x: Escape special characters from `image`
 
 ## Make runable with qdd
 1. store the file in safe location where you can't accidentally delete it.

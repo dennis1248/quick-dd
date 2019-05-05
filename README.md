@@ -15,10 +15,10 @@ A simple Python program to run dd quicker.
 
 ## Make runable with qdd
 1. store the file in safe location where you can't accidentally delete it.
-2. Make file executable with `chmod +x quick-dd.py`
-3. Make an alias with the following command `alias qdd='python /location/of/file'`
+2. Make file executable with `chmod +x quick-dd.py`.
+3. Make an alias by adding `alias qdd='python /location/of/file'` to the .bashrc under `# User specific aliases and functions` in your home directory.
 
-Now the tool can be run with the `qdd` command from the commandline. 
+Now the tool can be run with the `qdd` command from the commandline.
 
 ## Default pools
 - 'os' pointing to /mnt/sdb1/OS

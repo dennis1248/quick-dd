@@ -13,6 +13,13 @@ A simple Python program to run dd quicker.
 - :x: Pull image name from array with number
 - :x: The ability to manage pools with quick-dd
 
+## Make runable with qdd
+1. store the file in safe location where you can't accidentally delete it.
+2. Make file executable with `chmod +x quick-dd.py`
+3. Make an alias with the following command `alias qdd='python /location/of/file'`
+
+Now the tool can be run with the `qdd` command from the commandline. 
+
 ## Default pools
 - 'os' pointing to /mnt/sdb1/OS
 - 'down' pointing to ~/Downloads

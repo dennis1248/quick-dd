@@ -45,7 +45,6 @@ def ddRun():
         subprocess.run(['sudo', 'dd', 'if=' + homeFolder + '/Downloads' + str(image), 'of=' + str(targetPath)])
 
 selectTarget()
-targetCheck()
 selectPool()
 imageTargetCheck()
 ddRun()

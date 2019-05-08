@@ -32,6 +32,7 @@ def poolSelected():
 
 def selectPool():
     global pool
+    global homeFolder
     pool = input('From which pool do you wish to select an image?\n-> ')
     if pool == 'os':
         print('/mnt/sdb1/OS is selected')

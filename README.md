@@ -26,3 +26,6 @@ Now the tool can be run with the `qdd` command from the commandline.
 - 'down' pointing to ~/Downloads
 
 To make a custom pool edit the `selectPool` and `ddRun` functions.  
+
+## Manual
+`q` = Go back 

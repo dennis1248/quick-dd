@@ -15,7 +15,6 @@ def selectTarget():
     targetDisk = input('What is the target disk?\n-> ')
     targetPath = Path('/dev/' + str(targetDisk))
     if targetDisk == 'q':
-        targetDisk = None
         exit()
     targetCheck()
 

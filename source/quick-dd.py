@@ -27,7 +27,7 @@ def targetCheck():
         selectTarget()
 
 def poolSelected():
-    imageTargetCheck()
+    imageTarget()
     ddRun()
 
 def selectPool():
@@ -48,18 +48,29 @@ def selectPool():
         selectPool()
     poolSelected()
 
-def imageTargetCheck():
+def imageTarget():
     global image
+    global imagePath
     image = input('Which image do you wish to flash?\n-> ')
     if image == 'q':
         selectPool()
+    elif pool == 'os':
+        imagePath = '/mnt/sdb1/OS/' + image
+    elif pool == down:
+        imagePath = homeFolder + '/Downloads/' + image
+    imageTargetCheck()
+
+def imageTargetCheck():
+    imageTargetFile = Path(imagePath)
+    if imageTargetFile.is_file():
+        ddRun()
+    else:
+        print(image + ' does not exist, please select an existing file')
+        imageTarget()
 
 def ddRun():
     print('Flashing ' + image + ' to '  + str(targetPath) + '...')
-    if pool == 'os':
-        subprocess.run(['sudo', 'dd', 'if=/mnt/sdb1/OS/' + image, 'of=' + str(targetPath)])
-    elif pool == 'down':
-        subprocess.run(['sudo', 'dd', 'if=' + homeFolder + '/Downloads' + image, 'of=' + str(targetPath)])
-    print('Flash finished successfully')
+    subprocess.run(['sudo', 'dd', 'if=' + imagePath, 'of=' + str(targetPath)])
+    print('Flash finished!')
 
 qddStart()

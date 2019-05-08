@@ -6,6 +6,7 @@ A simple Python program to run dd quicker.
 ## Done
 - :heavy_check_mark: Basic functionality
 - :heavy_check_mark: Check if selected drive exists
+- :heavy_check_mark: Check if selected file/image exists
 
 ## To-do list
 - :x: Put ls output in array
@@ -28,4 +29,4 @@ Now the tool can be run with the `qdd` command from the commandline.
 To make a custom pool edit the `selectPool` and `ddRun` functions.  
 
 ## Manual
-`q` = Go back 
+`q` = Go back

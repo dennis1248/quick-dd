@@ -55,9 +55,11 @@ def imageTargetCheck():
         selectPool()
 
 def ddRun():
+    print('Flashing ' + image + ' to '  + str(targetPath) + '...')
     if pool == 'os':
         subprocess.run(['sudo', 'dd', 'if=/mnt/sdb1/OS/' + image, 'of=' + str(targetPath)])
     elif pool == 'down':
         subprocess.run(['sudo', 'dd', 'if=' + homeFolder + '/Downloads' + image, 'of=' + str(targetPath)])
+    print('Flash finished successfully')
 
 qddStart()

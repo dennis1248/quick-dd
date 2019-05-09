@@ -72,5 +72,6 @@ def ddRun():
     print('Flashing ' + image + ' to '  + str(targetPath) + '...')
     subprocess.run(['sudo', 'dd', 'if=' + imagePath, 'of=' + str(targetPath)])
     print('Flash finished!')
+    exit()
 
 qddStart()

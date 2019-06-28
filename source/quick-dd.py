@@ -1,10 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.6
 
 import subprocess
 from pathlib import Path
 
 
-subprocess.run(['lsblk'])
+subprocess.run('ls /dev/sd? 2> /dev/null', shell=True)
+subprocess.run('ls /dev/nvme??? 2> /dev/null', shell=True)
+subprocess.run('ls /dev/mmcblk? 2> /dev/null', shell=True)
 
 def qddStart():
     selectTarget()

@@ -15,6 +15,9 @@ A simple Python program to run dd quicker.
 - :x: The ability to manage pools with quick-dd
 - :x: Escape special characters from `image`
 
+## Dependencies
+- Python3.6. 
+
 ## Make runable with qdd
 1. store the file in safe location where you can't accidentally delete it.
 2. Make file executable with `chmod +x quick-dd.py`.
